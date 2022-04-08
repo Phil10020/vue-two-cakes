@@ -1,19 +1,55 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: HomeView
+    component: () => import('../views/HomeCakes.vue'),
+    children: [
+      {
+        path: '',
+        component: () => import('../views/IndexVeiw.vue')
+      },
+      {
+        path: '/about',
+        name: 'about',
+        component: () => import('../views/AboutMe.vue')
+      },
+      {
+        path: '/notice',
+        name: 'notice',
+        component: () => import('../views/NoticeThing.vue')
+      },
+      {
+        path: '/products',
+        name: 'products',
+        component: () => import('../views/ProductsView.vue')
+      },
+      {
+        path: '/product/:id',
+        name: 'product',
+        component: () => import('../views/ProductView.vue')
+      },
+      {
+        path: '/cart',
+        name: 'cart',
+        component: () => import('../views/CartView.vue')
+      },
+      {
+        path: '/orderform',
+        name: 'orderform',
+        component: () => import('../views/OrderForm.vue')
+      },
+      {
+        path: '/checkout/:id',
+        name: 'checkout',
+        component: () => import('../views/CheckOut.vue')
+      }
+    ]
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/admin',
+    name: 'admin',
+    component: () => import('../views/AdminView.vue')
   }
 ]
 

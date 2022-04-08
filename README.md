@@ -1,24 +1,21 @@
-# two-cakes
+1.導入專案樣式
+	-導入 Bs5   V
+	-修改變數   V
+    -swiper V
+	-Bs5 icons  V
 
-## Project setup
-```
-npm install
-```
+2.建立路由
+	-首頁HomeCakes 
+	-產品列表ProductsView
+	-單一產品ProductView 
+	-AboutMe
+	-NoticeThing
+	-Navbar,footer
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+3.版型套用至Vue Cli
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+4.頁面製作
+	-首頁
+	-產品列表
+	-單一產品
+	-Navbar,footer
