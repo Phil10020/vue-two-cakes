@@ -16,7 +16,7 @@
     </div>
     <div>
       <a href="#"
-        ><img src="/images/sc/LOGO314.png" width="150" alt="" srcset=""
+        ><img src="../../public/images/sc/LOGO314.png" width="150" alt="" srcset=""
       /></a>
     </div>
     <div class="d-flex flex-nowrap align-items-center">

@@ -20,7 +20,7 @@
     <div class="row row row-cols-1 row-cols-sm-2 g-5 mx-1 mx-lg-4">
       <div class="col mb-5" data-aos="fade-up" data-aos-easing="linear"
      data-aos-duration="1500">
-        <img class="img-fluid" src="/images/sc/china.png" alt="寒山寺" />
+        <img class="img-fluid" src="../../public/images/sc/china.png" alt="寒山寺" />
       </div>
       <div class="col d-flex flex-column justify-content-center mb-6" data-aos="fade-up" data-aos-easing="linear"
      data-aos-duration="1500">
@@ -41,11 +41,11 @@
       </div>
       <div class="col mb-5 order-1 order-lg-2" data-aos="fade-up" data-aos-easing="linear"
      data-aos-duration="1500">
-        <img class="img-fluid" src="/images/sc/teacher.png" alt="教學" />
+        <img class="img-fluid" src="../../public/images/sc/teacher.png" alt="教學" />
       </div>
       <div class="col mb-5 order-3 order-lg-3" data-aos="fade-up" data-aos-easing="linear"
      data-aos-duration="1500">
-        <img class="img-fluid" src="/images/sc/about-cake.png" alt="甜點" />
+        <img class="img-fluid" src="../../public/images/sc/about-cake.png" alt="甜點" />
       </div>
       <div class="col d-flex flex-column justify-content-center mb-6 order-4 order-lg-4" data-aos="fade-up" data-aos-easing="linear"
      data-aos-duration="1500">

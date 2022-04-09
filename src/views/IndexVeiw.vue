@@ -64,7 +64,7 @@
         <img
           class="section-height"
           style="object-position: 50% 80%"
-          src="/images/sc/cake3.jpg"
+          src="../../public/images/sc/cake3.jpg"
           alt=""
         />
       </div>
@@ -133,10 +133,10 @@
           background-size: cover;
           filter: blur(2px);
         "
-        :style="{ backgroundImage: `url(/images/sc/cake2.jpg)` }"
+        :style="{ backgroundImage: `url(../../public/images/sc/cake2.jpg)` }"
       ></div>
       <img
-        src="/images/sc/cake2.jpg"
+        src="../../public/images/sc/cake2.jpg"
         class="card-img-top"
         alt="..."
         style="position: absolute; top: 25px; left: 30px; height: 250px"
@@ -159,10 +159,10 @@
           background-size: cover;
           filter: blur(2px);
         "
-        :style="{ backgroundImage: `url(/images/sc/cake2.jpg)` }"
+        :style="{ backgroundImage: `url(../../public/images/sc/cake2.jpg)` }"
       ></div>
       <img
-        src="/images/sc/cake2.jpg"
+        src="../../public/images/sc/cake2.jpg"
         class="card-img-top"
         alt="..."
         style="position: absolute; top: 25px; left: 30px; height: 250px"
@@ -185,10 +185,10 @@
           background-size: cover;
           filter: blur(2px);
         "
-        :style="{ backgroundImage: `url(/images/sc/cake2.jpg)` }"
+        :style="{ backgroundImage: `url(../../public/images/sc/cake2.jpg)` }"
       ></div>
       <img
-        src="/images/sc/cake2.jpg"
+        src="../../public/images/sc/cake2.jpg"
         class="card-img-top"
         alt="..."
         style="position: absolute; top: 25px; left: 30px; height: 250px"

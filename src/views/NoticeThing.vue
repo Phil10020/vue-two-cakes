@@ -3,7 +3,7 @@
   <div
     class="banner container-fluid d-flex align-items-center justify-content-center"
     style="
-      background-image: url(/images/sc/notice1.png);
+      background-image: url(../../public/images/sc/notice1.png);
       height: 300px;
       background-position: 50% 50%;
       background-size: cover;

@@ -68,7 +68,7 @@
         </div>
         <div class="col-md-4">
           <img
-            src="/images/sc/cake6.jpg"
+            src="../../public/images/sc/cake6.jpg"
             alt=""
             class="img-fluid border border-white"
             style="height: 400px"
