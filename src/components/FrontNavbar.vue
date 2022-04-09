@@ -187,9 +187,9 @@ export default {
           // console.log(amount)
           this.isLoading = false
         })
-        .catch((err) => {
-          console.log(err.message)
-        })
+        // .catch((err) => {
+        //   console.log(err.message)
+        // })
     },
     updateCartItem (item) {
       const data = {
