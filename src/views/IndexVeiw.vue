@@ -228,19 +228,19 @@ export default {
       modules: [EffectFade, Autoplay, Pagination],
       swiper_img: [
         {
-          src: '../../public/images/sc/1.jpg',
+          src: require('../../public/images/sc/1.jpg'),
           text: 'lorem789'
         },
         {
-          src: '../../public/images/sc/2.jpg',
+          src: require('../../public/images/sc/2.jpg'),
           text: 'lorem123'
         },
         {
-          src: '../../public/images/sc/3.jpg',
+          src: require('../../public/images/sc/3.jpg'),
           text: 'lorem456'
         },
         {
-          src: '../../public/images/sc/4.jpg',
+          src: require('../../public/images/sc/4.jpg'),
           text: 'lorem211'
         }
       ]
