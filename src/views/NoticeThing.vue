@@ -1,13 +1,7 @@
 <template>
   <LoadingVue :active="isLoading" :z-index="100"></LoadingVue>
   <div
-    class="banner container-fluid d-flex align-items-center justify-content-center"
-    style="
-      background-image: url(../../public/images/sc/notice1.png);
-      height: 300px;
-      background-position: 50% 50%;
-      background-size: cover;
-    "
+    class="banner notice-banner container-fluid d-flex align-items-center justify-content-center"
   >
     <div
       class="container  d-flex align-items-center justify-content-end text-primary"

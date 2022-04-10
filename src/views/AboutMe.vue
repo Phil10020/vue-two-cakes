@@ -2,9 +2,7 @@
 <template>
 <!-- <Loading :active="isLoading" :z-index="1060"></Loading> -->
     <div
-    class="banner  container-fluid d-flex align-items-center justify-content-center"
-    style="background-image: url(../../public/images/sc/about.png) ;
-    height: 300px; background-position: 50% 50%; background-size: cover"
+    class="banner about-banner container-fluid d-flex align-items-center justify-content-center"
   >
   <div
       class="container  d-flex align-items-center justify-content-end text-white"

@@ -1,9 +1,7 @@
 <template>
   <LoadingVue :active="isLoading" :z-index="1060"></LoadingVue>
     <div
-    class="banner  container-fluid d-flex align-items-center justify-content-center"
-    style="background-image: url(../../public/images/sc/cart-banner2.png) ;
-    height: 300px; background-position: 50% 50%; background-size: cover"
+    class="banner cart-banner container-fluid d-flex align-items-center justify-content-center"
   >
       <span class="fs-1">Cart</span>
   </div>
