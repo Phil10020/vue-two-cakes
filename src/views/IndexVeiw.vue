@@ -126,14 +126,7 @@
   <!-- 產品卡片 -->
   <div class="container d-flex justify-content-evenly py-5">
     <div class="card shadow-sm" style="width: 18rem">
-      <div
-        style="
-          height: 300px;
-          background-position: 50% 50%;
-          background-size: cover;
-          filter: blur(2px);
-        "
-        :style="{ backgroundImage: `url(../../public/images/sc/cake2.jpg)` }"
+      <div class="product-card"
       ></div>
       <img
         src="../../public/images/sc/cake2.jpg"
@@ -152,14 +145,7 @@
       </div>
     </div>
     <div class="card shadow-sm" style="width: 18rem">
-      <div
-        style="
-          height: 300px;
-          background-position: 50% 50%;
-          background-size: cover;
-          filter: blur(2px);
-        "
-        :style="{ backgroundImage: `url(../../public/images/sc/cake2.jpg)` }"
+      <div class="product-card"
       ></div>
       <img
         src="../../public/images/sc/cake2.jpg"
@@ -178,14 +164,7 @@
       </div>
     </div>
     <div class="card shadow-sm" style="width: 18rem">
-      <div
-        style="
-          height: 300px;
-          background-position: 50% 50%;
-          background-size: cover;
-          filter: blur(2px);
-        "
-        :style="{ backgroundImage: `url(../../public/images/sc/cake2.jpg)` }"
+      <div class="product-card"
       ></div>
       <img
         src="../../public/images/sc/cake2.jpg"

@@ -27,4 +27,12 @@
     background-size: cover ;
 }
 
+.product-card {
+    background-image: url('/public/images/sc/cake2.jpg');
+    height: 300px;
+    background-position: 50% 50%;
+    background-size: cover;
+    filter: blur(2px);
+}
+
 
