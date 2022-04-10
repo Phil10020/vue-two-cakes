@@ -1,9 +1,7 @@
 <template>
 <LoadingVue :active="isLoading" :z-index="100"></LoadingVue>
   <div
-    class="banner mb-5 container-fluid d-flex align-items-center justify-content-end"
-    style="background-image: url(../../public/images/sc/products-banner2.png) ;
-    height: 300px; background-position: 50% 50%; background-size: cover"
+    class="banner products-banner mb-5 container-fluid d-flex align-items-center justify-content-end"
   >
   <div
       class="container  d-flex justify-content-end text-white"
