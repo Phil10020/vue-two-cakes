@@ -71,7 +71,7 @@
             <tr>
               <td colspan="4" class="text-end">總計 {{ cartData.total }} 元</td>
             </tr>
-            <tr>
+            <!-- <tr>
               <td colspan="4">
                 <div class="input-group my-3 input-group-sm">
                   <input
@@ -92,7 +92,7 @@
                   </div>
                 </div>
               </td>
-            </tr>
+            </tr> -->
             <tr v-if="cartData.final_total !== cartData.total">
               <td colspan="4" class="text-end text-danger fw-bolder fs-4">
                 優惠後總金額 {{ cartData.final_total }} 元

@@ -1,5 +1,5 @@
 <template>
-  <LoadingVue :active="isLoading" :z-index="1060"></LoadingVue>
+  <LoadingVue :active="isLoading" :z-index="100"></LoadingVue>
     <div
     class="banner cart-banner container-fluid d-flex align-items-center justify-content-center"
   >

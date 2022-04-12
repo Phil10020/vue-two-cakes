@@ -124,7 +124,7 @@
     </div>
   </div>
   <!-- 產品卡片 -->
-  <div class="container d-flex justify-content-evenly py-5">
+  <div class="container d-flex justify-content-evenly py-5" >
     <div class="card shadow-sm" style="width: 18rem">
       <div class="product-card"
       ></div>
@@ -198,6 +198,11 @@ import 'swiper/css/pagination'
 import { EffectFade, Autoplay, Pagination } from 'swiper'
 
 export default {
+  data () {
+    return {
+      products: []
+    }
+  },
   components: {
     Swiper,
     SwiperSlide
@@ -224,6 +229,20 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    getProducts () {
+      this.isLoading = true
+      const url = `${process.env.VUE_APP_API}api/${process.env.VUE_APP_PATH}/products/all`
+      this.$http.get(url).then((res) => {
+        this.products = res.data.products
+        console.log(this.products[1].imageUrl)
+      })
+      this.isLoading = false
+    }
+  },
+  mounted () {
+    this.getProducts()
   }
 }
 </script>

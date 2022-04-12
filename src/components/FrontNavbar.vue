@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg banner bg-light border shadow-sm">
       <div class="container-fluid">
         <a class="navbar-brand p-0" href="#"
-          ><img src="../../public/images/sc/LOGO312.png" alt="" width="100"
+          ><img src="/images/sc/LOGO312.png" alt="" width="100"
         /></a>
         <button
           class="navbar-toggler"
@@ -187,9 +187,9 @@ export default {
           // console.log(amount)
           this.isLoading = false
         })
-        // .catch((err) => {
-        //   console.log(err.message)
-        // })
+        .catch((err) => {
+          console.log(err.message)
+        })
     },
     updateCartItem (item) {
       const data = {
