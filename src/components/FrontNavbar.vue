@@ -1,52 +1,52 @@
 <template>
   <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg banner bg-light border shadow-sm">
+    <!-- nav test -->
+    <nav
+      class="navbar navbar-expand-lg banner border shadow-sm navbar-light bg-light"
+    >
       <div class="container-fluid">
-        <a class="navbar-brand p-0" href="#"
+        <a class="navbar-brand" href="#"
           ><img src="/images/sc/LOGO312.png" alt="" width="100"
         /></a>
         <button
           class="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
+          @click="toggleNav"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse fs-5 d-flex justify-content-between"
-          id="navbarSupportedContent"
-        >
+        <div class="collapse navbar-collapse fs-5" id="navbarNavAltMarkup" ref="collapse">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
               <router-link
                 to="/"
-                class="nav-link active"
+                class="nav-link active text-primary"
                 aria-current="page"
                 href="#"
+                @click="closeNav"
                 >首頁</router-link
               >
             </li>
             <li class="nav-item">
-              <router-link to="/products" class="nav-link" href="#"
+              <router-link to="/products" class="nav-link text-primary" href="#"
+                @click="closeNav"
                 >甜點列表</router-link
               >
             </li>
             <li class="nav-item">
-              <router-link to="/about" class="nav-link" href="#"
+              <router-link to="/about" class="nav-link text-primary" href="#"
+                @click="closeNav"
                 >關於TwoCakes</router-link
               >
             </li>
             <li class="nav-item">
-              <router-link to="/notice" class="nav-link" href="#"
+              <router-link to="/notice" class="nav-link text-primary" href="#"
+                @click="closeNav"
                 >訂購須知</router-link
               >
             </li>
           </ul>
-          <div class="d-flex">
+          <div class="d-flex ms-auto">
             <a href="" class="a-block mx-2"
               ><i class="bi bi-bookmark-heart fs-3"></i
             ></a>
@@ -70,9 +70,10 @@
         </div>
       </div>
     </nav>
+    <!-- end1 -->
     <!-- offcanvas -->
     <div
-      class="offcanvas offcanvas-end "
+      class="offcanvas offcanvas-end"
       tabindex="-1"
       id="offcanvasWithBackdrop"
       aria-labelledby="offcanvasWithBackdropLabel"
@@ -96,7 +97,8 @@
             <span class="material-icons text-white fs-1"> feedback </span>
           </div>
           <p class="text-primary fs-5 text-center">Oops！購物車空空</p>
-          <router-link to="/products"
+          <router-link
+            to="/products"
             href="#"
             class="border btn btn-primary d-flex justify-content-center text-white fs-5 mx-5"
             >選購些什麼吧~</router-link
@@ -110,7 +112,9 @@
                   <td class="img-fluid col-3 py-1">
                     <img :src="item.product.imageUrl" alt="" />
                   </td>
-                  <td class="text-center fs-7 align-middle">{{ item.product.title }}</td>
+                  <td class="text-center fs-7 align-middle">
+                    {{ item.product.title }}
+                  </td>
                   <td class="align-middle">
                     <div class="">
                       <select
@@ -119,7 +123,11 @@
                         v-model="item.qty"
                         @change="updateCartItem(item)"
                       >
-                        <option :value="num" v-for="num in 20" :key="`${num}${item.id}`">
+                        <option
+                          :value="num"
+                          v-for="num in 20"
+                          :key="`${num}${item.id}`"
+                        >
                           {{ num }}
                         </option>
                       </select>
@@ -127,23 +135,31 @@
                   </td>
                   <td class="align-middle">
                     <button
-                  type="button"
-                  class="btn text-danger fs-4"
-                  @click="removeCartItem(item.id)"
-                >
-                  <!-- <i class="fas fa-spinner fa-pulse"></i> -->
-                  <i class="bi bi-trash"></i>
-                </button>
+                      type="button"
+                      class="btn text-danger fs-4"
+                      @click="removeCartItem(item.id)"
+                    >
+                      <!-- <i class="fas fa-spinner fa-pulse"></i> -->
+                      <i class="bi bi-trash"></i>
+                    </button>
                   </td>
                 </tr>
               </tbody>
               <tfoot>
                 <tr>
                   <td>總金額</td>
-                  <td>{{ cartData.total }} <small>NTD</small> </td>
-                <td colspan="2"><router-link to="/cart" class="btn btn-primary text-white fs-7" href="#" role="button" >前往結帳</router-link></td>
+                  <td>{{ cartData.total }} <small>NTD</small></td>
+                  <td colspan="2">
+                    <router-link
+                      to="/cart"
+                      class="btn btn-primary text-white fs-7"
+                      href="#"
+                      role="button"
+                      >前往結帳</router-link
+                    >
+                  </td>
                 </tr>
-  </tfoot>
+              </tfoot>
             </table>
           </div>
         </div>
@@ -155,6 +171,7 @@
 
 <script>
 import emitter from '@/utils/emitter'
+import collapseMixin from '@/utils/mixins/mixinsCollapse'
 
 export default {
   data () {
@@ -167,6 +184,7 @@ export default {
       originPriceTotal: 0
     }
   },
+  mixins: [collapseMixin],
   methods: {
     getCart () {
       this.isLoading = true
