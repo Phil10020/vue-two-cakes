@@ -1,0 +1,30 @@
+
+.product-card {
+    background-image: url('/public/images/sc/cake2.jpg');
+    height: 300px;
+    background-position: 50% 50%;
+    background-size: cover;
+    filter: blur(2px);
+}
+
+@include media-breakpoint-up(md) {
+    .product-size {
+        height: 100%;
+        width: calc(50% - 30px);
+        &-img-back {
+            transform: translateX(2rem);
+            z-index: 1;
+            &::after {
+                border: 2px solid #1e1306;
+                content: '';
+                position: absolute;
+                top: -3.5vmin;
+                left: -1.5rem;
+                height: 100%;
+                width: calc(100% - 30px);
+                z-index: -1;
+              }
+            }
+    }
+}
+

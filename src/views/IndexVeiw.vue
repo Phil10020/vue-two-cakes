@@ -91,7 +91,7 @@
       <div class="col-md-6 shadow p-3 mb-5 bg-body rounded">
         <img
           class="section-height"
-          src="https://scontent.ftpe14-1.fna.fbcdn.net/v/t1.6435-9/143590038_114198937300897_2106869322168097081_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=a26aad&_nc_ohc=B6_2QAn9WLQAX-281AP&_nc_ht=scontent.ftpe14-1.fna&oh=00_AT9R6ODyUiZwtU4VWJuet0d2hJkGG75H4g8pmva3L-dT_g&oe=625ADAE8"
+          src="../../public/images/sc/cake6.jpg"
           alt=""
         />
       </div>
