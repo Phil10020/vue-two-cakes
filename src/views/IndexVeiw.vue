@@ -57,7 +57,7 @@
   <!-- 商品敘述 -->
   <div class="container">
     <h2 class="text-center text-primary p-5">
-      <span class="text-heigh-light"> 淺嚐在嘴裡的蜜，是屬於幸福的甜 </span>
+      <span class="text-heigh-light"> 淺嚐在嘴裡的蜜，是屬於幸福的甜TEST1 </span>
     </h2>
     <div class="row g-3 mb-5 background-gray">
       <div class="col-md-6 shadow p-3 mb-5 bg-body rounded">
